@@ -49,3 +49,7 @@ compatibility_date = "2023-09-14"
 # [[migrations]]
 # tag = "v1"
 # new_classes = ["MyDurableObject"]
+
+binding = "DB" # i.e. available in your Worker on env.DB
+database_name = "data-river-db"
+database_id = "cae2d308-d2a7-46ed-a627-257af563e533"
