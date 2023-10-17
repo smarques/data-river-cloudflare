@@ -1,3 +1,4 @@
 node_modules
 data-river.code-workspace
 .DS_Store
+worker/.wrangler/state/v3/d1/miniflare-D1DatabaseObject/*.*

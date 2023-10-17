@@ -1,6 +1,6 @@
 name = "data-river"
 main = "src/index.ts"
-compatibility_date = "2023-09-14"
+compatibility_date = "2023-09-22"
 
 # Variable bindings. These are arbitrary, plaintext strings (similar to environment variables)
 # Note: Use secrets to store sensitive data.
@@ -50,6 +50,7 @@ compatibility_date = "2023-09-14"
 # tag = "v1"
 # new_classes = ["MyDurableObject"]
 
+[[d1_databases]]
 binding = "DB" # i.e. available in your Worker on env.DB
-database_name = "data-river-db"
-database_id = "cae2d308-d2a7-46ed-a627-257af563e533"
+database_name = "data-river-db-prod"
+database_id = "4187e368-40d6-434b-a0d3-ec286931404d"

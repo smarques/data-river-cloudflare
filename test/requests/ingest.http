@@ -1,0 +1,93 @@
+POST http://localhost:8787/ingest
+Content-Type: application/json
+
+{
+	"apiKey": "2ottd6QjYmko7YuQbGSzuxeD22i2uUJRxHNf2dvN",
+	"records":[{
+  "name":"L6-43",
+  "q":175.2,
+  "dt":"2022-10-02T22:05:00.000Z",
+  "quality": "90.54"
+},{
+  "name":"L5-41",
+  "q":179.2,
+  "dt":"2022-10-02T22:06:00.000Z",
+  "quality": 83.54
+}]
+}
+
+###
+POST https://data-river.d20artlab.workers.dev/ingest
+Content-Type: application/json
+
+{
+	"apiKey": "2ottd6QjYmko7YuQbGSzuxeD22i2uUJRxHNf2dvN",
+	"records":[{
+  "name":"L6-43",
+  "q":175.2,
+  "dt":"2022-10-02T22:05:00.000Z",
+  "quality": "90.54"
+},{
+  "name":"L5-41",
+  "q":179.2,
+  "dt":"2022-10-02T22:06:00.000Z",
+  "quality": 83.54
+}]
+}
+
+###
+GET http://localhost:8787/pull
+Content-Type: application/json
+
+###
+GET  https://data-river.d20artlab.workers.dev/pull
+Content-Type: application/json
+
+###
+GET http://localhost:8787/pull?dt=2022-10-02T22:10:00.000Z
+Content-Type: application/json
+
+###
+GET http://localhost:8787/pull-abs?dt=2022-10-02T22:10:00.000Z
+Content-Type: application/json
+
+
+###
+POST http://localhost:8787/reset
+Content-Type: application/json
+
+###
+POST https://data-river.d20artlab.workers.dev/reset
+Content-Type: application/json
+
+###
+POST https://localhost:8787/init
+Content-Type: application/json
+
+###
+POST https://data-river.d20artlab.workers.dev/init
+Content-Type: application/json
+
+###
+POST http://localhost:8787/clear-pos?pos=L6-43
+Content-Type: application/json
+
+
+
+###
+GET http://localhost:8787/latest?q=20
+Content-Type: application/json
+
+###
+GET http://localhost:8787/csv-entries
+Content-Type: application/json
+
+###
+GET http://localhost:8787/csv-avg
+Content-Type: application/json
+
+###
+POST http://localhost:8787/ingest
+Content-Type: application/json
+
+[{"name":"L5-0035","q":2.0,"dt":"2023-03-09T17:15:00.797","quality":63.0},{"name":"L5-9999","q":1.0,"dt":"2023-03-09T17:15:00.797","quality":96.0},{"name":"L6-0035","q":10.0,"dt":"2023-03-09T17:15:00.797","quality":84.0},{"name":"L6-9999","q":0.0,"dt":"2023-03-09T17:15:00.797","quality":100.0}]

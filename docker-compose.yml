@@ -1,0 +1,14 @@
+services:
+  wrangler:
+    build: ./docker/cloudflare
+    volumes:
+      - ./worker:/app
+    working_dir: /app
+    ports:
+      - '8787:8787'
+    environment:
+      - NO_D1_WARNING=true
+      - CLOUDFLARE_API_TOKEN=Gsxk8MDGN0Sg3m67Uq0V94APy574JyQlJm7NAaGZ
+
+  # redis:
+  #   image: "redis:alpine"
